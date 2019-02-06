@@ -1,0 +1,28 @@
+<app-user-search>
+</app-user-search>
+
+<div class="col-md-12 col-lg-12 col-sm-12 left">
+
+    <!-- <h3>Users List</h3> -->
+
+    <div class="list-group" *ngFor="let user of users; let i=index">
+        <div class="list-group-item" *ngIf="i<limit" routerLinkActive="active" routerLink="{{user.login}}">
+            <a *ngIf="i<limit " routerLinkActive="active " routerLink="{{user.login}}">
+                <img src="{{user.avatar_url}}" alt=""> {{user.login}}
+            </a>
+            <div>
+                <a href="https://github.com/{{user.login}}">View on Github</a><br>
+                <a *ngIf="i<limit " routerLinkActive="active " routerLink="{{user.login}} ">View Details</a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- <button class="btn btn-dark" (click)="loadMore()"> Load More </button> -->
+
+</div>
+
+
+
+<router-outlet></router-outlet>

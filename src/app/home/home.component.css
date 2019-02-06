@@ -1,0 +1,25 @@
+.home {
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.home div {
+    display: flex;
+    padding: 0 60px;
+}
+
+img {
+    max-width: 350px;
+    max-height: 350px;
+    margin-right: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}

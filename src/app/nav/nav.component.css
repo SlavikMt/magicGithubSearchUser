@@ -1,0 +1,47 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    background-color: lightgray;
+    border: none;
+    margin-bottom: 0;
+    padding: 5px 40px;
+    border-radius: 0;
+    height: 60px;
+    position: sticky;
+    top: -1px;
+}
+
+nav img {
+    width: 100px;
+}
+
+li:first-child {
+    border-right: 2px solid black;
+}
+
+ul {
+    padding: 15px 0;
+    margin-bottom: 0;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+a {
+    color: black;
+}
+
+ul li a:focus {
+    color: blue !important;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    justify-content: flex-end;
+}

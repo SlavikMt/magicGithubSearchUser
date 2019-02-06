@@ -1,0 +1,56 @@
+<div class="user-details" *ngIf="user">
+    <div class="head">
+        <img [src]="user.avatar_url">
+        <h3><strong>{{user.login | uppercase}}</strong></h3>
+        <a href="https://github.com/{{user.login}}">View on Github</a>
+    </div>
+    <hr>
+    <div class="list">
+        <img src="https://www.glyphicons.com/img/glyphicons/basic/2x/glyphicons-basic-4-user@2x.png" alt="">
+        <h3>{{user.name}}</h3>
+
+    </div>
+    <div class="list">
+        <img src="https://www.glyphicons.com/img/glyphicons/basic/2x/glyphicons-basic-55-clock@2x.png" alt="">
+        <h3>{{user.created_at | date:'fullDate'}}</h3>
+
+    </div>
+    <div class="list">
+        <img src="https://www.glyphicons.com/img/glyphicons/basic/2x/glyphicons-basic-591-map-marker@2x.png" alt="">
+        <h3>{{user.location}}</h3>
+
+
+    </div>
+    <div class="list">
+        <img src="https://www.glyphicons.com/img/glyphicons/basic/2x/glyphicons-basic-460-briefcase@2x.png" alt="">
+        <h3>{{user.company}}</h3>
+
+    </div>
+    <div class="list">
+        <img src="https://www.glyphicons.com/img/glyphicons/basic/2x/glyphicons-basic-11-envelope@2x.png" alt="">
+        <h3>{{user.email}}</h3>
+
+    </div>
+
+    <h3><strong>repos :</strong> </h3>
+    <hr class="bordered">
+
+
+
+    <div class="repositoryContainer mt-2">
+        <div class="col-12 px-0">
+
+            <div *ngFor="let repo of userDetails.repos">
+                <span>
+                                <a href="{{repos.html_url}}"  class="font-weight-bold">
+                                    <span>{{repos.name}} </span>
+                </a>
+                </span>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
